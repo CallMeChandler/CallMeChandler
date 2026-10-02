@@ -2,6 +2,10 @@ name: Update profile stats
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/profile-stats.yml'
   schedule:
     - cron: '17 3 * * *'
 
@@ -44,5 +48,5 @@ jobs:
           fi
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git commit -m "chore: update profile stats"
+          git commit -m "chore: refresh profile activity"
           git push
