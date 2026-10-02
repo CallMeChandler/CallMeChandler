@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/><stop offset="55%" stop-color="#111827"/><stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39d353"/><stop offset="50%" stop-color="#58a6ff"/><stop offset="100%" stop-color="#bc8cff"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#263043" stroke-width="0.7" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="360" rx="26" fill="url(#bg)"/><rect width="1200" height="360" rx="26" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="25" fill="none" stroke="#30363d" stroke-width="2"/>
+  <rect x="28" y="24" width="1144" height="312" rx="18" fill="#0d1117" fill-opacity="0.78" stroke="#30363d"/>
+  <circle cx="58" cy="52" r="7" fill="#ff5f56"/><circle cx="82" cy="52" r="7" fill="#ffbd2e"/><circle cx="106" cy="52" r="7" fill="#27c93f"/>
+  <text x="600" y="58" text-anchor="middle" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">aakarsh@github — profile</text>
+  <text x="62" y="112" fill="#39d353" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18">$ whoami</text>
+  <text x="62" y="166" fill="url(#accent)" filter="url(#glow)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="44" font-weight="700">Aakarsh Agarwal</text>
+  <text x="64" y="200" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18">aka CallMeChandler  //  backend · systems · AI engineering</text>
+  <text x="62" y="250" fill="#58a6ff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18">$ git status --commitment</text>
+  <text x="62" y="286" fill="#f0f6fc" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19">"Everyone says I've got serious commitment issues."</text>
+  <text x="62" y="316" fill="#39d353" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19">GitHub graph: strongly disagrees.  █</text>
+</svg>
