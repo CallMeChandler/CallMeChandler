@@ -128,28 +128,6 @@ shipping       Git • GitHub Actions • Docker • AWS • Vercel
 
 ---
 
-### `~/problem-solving`
-
-<div align="center">
-
-<a href="https://leetcode.com/u/chandlergonehigh/"><b>LeetCode · @chandlergonehigh</b></a>
-
-<sub>DSA practice, because apparently debugging segfaults wasn't enough.</sub>
-
-<br><br>
-
-<a href="https://leetcode.com/u/chandlergonehigh/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://leetcard.jacoblin.cool/chandlergonehigh?theme=dark&font=JetBrains%20Mono&ext=heatmap">
-    <source media="(prefers-color-scheme: light)" srcset="https://leetcard.jacoblin.cool/chandlergonehigh?theme=light&font=JetBrains%20Mono&ext=heatmap">
-    <img alt="Aakarsh's LeetCode stats and submission heatmap" src="https://leetcard.jacoblin.cool/chandlergonehigh?theme=dark&font=JetBrains%20Mono&ext=heatmap" width="820">
-  </picture>
-</a>
-
-</div>
-
----
-
 ### `~/activity`
 
 <div align="center">
@@ -171,6 +149,28 @@ shipping       Git • GitHub Actions • Docker • AWS • Vercel
   <img alt="Contribution snake" src="https://raw.githubusercontent.com/CallMeChandler/CallMeChandler/output/github-snake.svg" width="100%">
 </picture>
 </details>
+
+</div>
+
+---
+
+### `~/problem-solving`
+
+<div align="center">
+
+<a href="https://leetcode.com/u/chandlergonehigh/"><b>LeetCode · @chandlergonehigh</b></a>
+
+<sub>DSA practice, because apparently debugging segfaults wasn't enough.</sub>
+
+<br><br>
+
+<a href="https://leetcode.com/u/chandlergonehigh/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://leetcard.jacoblin.cool/chandlergonehigh?theme=dark&font=JetBrains%20Mono&ext=heatmap">
+    <source media="(prefers-color-scheme: light)" srcset="https://leetcard.jacoblin.cool/chandlergonehigh?theme=light&font=JetBrains%20Mono&ext=heatmap">
+    <img alt="Aakarsh's LeetCode stats and submission heatmap" src="https://leetcard.jacoblin.cool/chandlergonehigh?theme=dark&font=JetBrains%20Mono&ext=heatmap" width="820">
+  </picture>
+</a>
 
 </div>
 
