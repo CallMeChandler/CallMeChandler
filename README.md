@@ -154,24 +154,16 @@ shipping       Git • GitHub Actions • Docker • AWS • Vercel
 
 <div align="center">
 
-<sub>Everyone says I've got commitment issues. GitHub has receipts.</sub>
-
-<br><br>
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile/activity-consistency-wide-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./profile/activity-consistency-wide-light.svg">
-  <img alt="GitHub activity consistency" src="./profile/activity-consistency-wide-light.svg" width="760">
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/contribution-calendar-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile/contribution-calendar-light.svg">
+  <img alt="GitHub contribution calendar" src="./profile/contribution-calendar-light.svg" width="100%">
 </picture>
 
 <br>
 
-<sub>800+ contributions over the last year.</sub>
-
-<br><br>
-
 <details>
-<summary>🐍 contribution graph, but with a predator</summary>
+<summary>🐍 contribution snake</summary>
 <br>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CallMeChandler/CallMeChandler/output/github-snake-dark.svg">

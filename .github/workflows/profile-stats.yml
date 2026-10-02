@@ -1,4 +1,4 @@
-name: Update profile stats
+name: Update profile activity card
 
 on:
   workflow_dispatch:
@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/profile-stats.yml'
+      - 'scripts/generate_activity_svg.py'
   schedule:
     - cron: '17 3 * * *'
 
@@ -13,43 +14,31 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-profile-stats
+  group: update-profile-activity-card
   cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - uses: shinpr/github-profile-stats@49b5f7091182a45f3ef93923505b660c6da5f835 # v0.2.0
-        id: stats
-        with:
-          username: ${{ github.repository_owner }}
-          token: ${{ github.token }}
-          profile: activity-consistency
-
-      - name: Stage complete artifact set
+      - name: Generate GitHub-style contribution calendar SVGs
         env:
-          READY_DIR: ${{ steps.stats.outputs.ready-dir }}
-        run: |
-          mkdir -p profile
-          cp "$READY_DIR"/activity-consistency-*.svg profile/
-          test -s profile/activity-consistency-wide-light.svg
-          test -s profile/activity-consistency-wide-dark.svg
-          test -s profile/activity-consistency-compact-light.svg
-          test -s profile/activity-consistency-compact-dark.svg
-          git add profile/activity-consistency-*.svg
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: python scripts/generate_activity_svg.py
 
-      - name: Publish changed artifact set
+      - name: Commit and push if changed
         run: |
+          git add profile/contribution-calendar-dark.svg profile/contribution-calendar-light.svg
           if git diff --cached --quiet; then
             exit 0
           fi
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git commit -m "chore: refresh profile activity"
+          git commit -m "chore: refresh contribution calendar"
           git pull --rebase origin main
           git push origin main
